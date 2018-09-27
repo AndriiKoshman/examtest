@@ -6,4 +6,4 @@ Purpose: automation test for checking google search results
 3. Download Maven from https://maven.apache.org/download.cgi
 4. Define Maven path in PATH variable (to check from cmd mvn -version)
 5. Install Chrome and FireFox browsers
-6. Run Test from project root folder -mvn clean install -DsuiteXmlFile=testNG.xml
+6. Run Test from project root folder via cmd by -mvn clean install -DsuiteXmlFile=testNG.xml
