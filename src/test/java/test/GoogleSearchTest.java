@@ -29,7 +29,9 @@ public class GoogleSearchTest extends GoogleBaseTest {
             }
 
         }
+
         googleResultPage = googleResultPage.goNextPage();
+
         Assert.assertEquals(googleResultPage.getSearchResultsAmount(),resultsAmount, "Wrong total amount of results");
         resultsTextList = googleResultPage.getResultsTextList();
         for(String resultsText: resultsTextList){
