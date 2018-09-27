@@ -14,14 +14,6 @@ public class GoogleBasePage {
 
         protected WebDriver driver;
 
-        protected String getCurrentUrl() {
-            return driver.getCurrentUrl();
-        }
-
-        protected String getCurrentTitle() {
-            return driver.getTitle();
-        }
-
         /**
          * Explicit wait till WebElement visibility becomes true
          *
