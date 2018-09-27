@@ -34,16 +34,6 @@ public class GoogleBasePage {
             return wait.until(ExpectedConditions.visibilityOf(element));
         }
 
-        protected boolean isUrlContains(String partialUrl, int timeOutSec){
-            WebDriverWait wait = new WebDriverWait(driver, timeOutSec);
-
-            try{
-                return wait.until(ExpectedConditions.urlContains(partialUrl));
-            }catch (TimeoutException e){
-                return false;
-            }
-        }
-
         protected void assertElementIsVisable(WebElement webElement, int timeOutInSec, String message){
             try {
                 waitUntilElementVisable(webElement, timeOutInSec);
